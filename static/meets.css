@@ -1,0 +1,579 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css?family=Lato|Raleway');
+
+*{
+  margin: 0px;
+  padding: 0px;
+}
+html{
+  height: 100%;
+}
+body{
+  height: 600%;
+  background-color: white;
+  position: relative;
+}
+a{
+  text-decoration: none;
+  color: black;
+}
+header{
+  background: #DB7093;
+  height: 100px;
+  box-shadow: 0 0 15px;
+  width: 100%;
+}
+.all{
+  background: url(las.jpg) no-repeat center fixed;
+  background-size: cover;
+  background-attachment: scroll;
+  margin-top: 0;
+  height: 700px;
+  border-bottom: 2px solid silver;
+}
+.sign {
+  width: 10%;
+  position: relative;
+  float: right;
+  display: block;
+  margin: 10px;
+  font-size: 1.2em;
+  margin-top: 30px;
+}
+.own_page {
+  width: 10%;
+  position: relative;
+  float: right;
+  display: block;
+  margin: 10px;
+  font-size: 1.2em;
+  margin-top: 30px;
+}
+.sign p{
+  font-family: cursive;
+}
+.reg {
+  width: 10%;
+  position: relative;
+  float: right;
+  display: block;
+  margin: 10px;
+  font-size: 1.2em;
+  margin-top: 30px;
+}
+.reg p{
+  font-family: cursive;
+}
+.love {
+  width: 55%;
+  position: relative;
+  float: left;
+}
+.love p{
+  font-size: 2.1em;
+  font-family: Bodoni MT Black;
+  float: right;
+}
+.love p span{
+  font-size: 2em;
+  font-family: Forte;
+  color: white;
+}
+.may{
+  font-size: 1em;
+  color: black;
+  margin: 20px;
+  margin-left: 300px;
+}
+.may p{
+  font-family: cursive;
+}
+.start{
+  width: 50%;
+  float: left;
+  margin-top: 100px;
+}
+.join{
+  display: block;
+  border-radius: 30px;
+  background-color: #DB7093;
+  color: white;
+  font-family: cursive;
+  width: 400px;
+  height: 80px;
+  box-shadow:  3px 3px 3px 3px grey;
+  margin-left: 200px;
+}
+.join p{
+  margin: 10px;
+  margin-top: 80px;
+  padding: 10px;
+  padding-left: 50px;
+  font-size: 2em;
+}
+.join:hover{
+  text-decoration: underline;
+  cursor: pointer;
+}
+.join a{
+  color: white;
+}
+.start #you{
+  width: 60%;
+  font-size: 1.5em;
+  color: black;
+  font-family: cursive;
+  margin-top: 30px;
+  margin-left: 200px;
+}
+.friends{
+  position: relative;
+  margin-left: 350px;
+}
+.friends img{
+  height: 380px;
+  border-radius: 40%;
+}
+.friends pre{
+  font-size: 3em;
+  float: left;
+  margin-top: 20px;
+  font-family: inherit;
+}
+.likely-minded{
+  position: relative;
+  margin-left: 300px;
+}
+.likely-minded img{
+  height: 350px;
+  border-radius: 40%;
+}
+.likely-minded pre{
+  font-size: 3em;
+  float: left;
+  margin-top: 20px;
+  font-family: inherit;
+}
+.calc{
+  position: relative;
+  margin-left: 300px;
+}
+.calc img{
+  height: 350px;
+  border-radius: 40%;
+  margin-left: 80px;
+}
+.calc pre{
+  font-size: 3em;
+  float: left;
+  margin-top: 20px;
+  font-family: inherit;
+}
+
+/*  Таймер */
+
+#output {
+  color: black;
+  font-size: 72px;
+  font-family: sans-serif;
+  margin-left: 200px;
+  margin-top: 200px;
+ }
+#slider {
+  position: absolute;
+  height: 20px;
+  top: calc(100% - 8px);
+  left: 0;
+  background-color: #DB7093;
+  width: 100%; }
+
+
+/* Таймер */
+
+/*  Всплывающая форма */
+.container-message{
+  width: 400px;
+  height: 405px;
+  background-color: #DB7093;
+  text-align: center;
+  margin-left: 850px;
+  margin-top: 100px;
+  border-radius: 5px;
+  position: absolute;
+  bottom: 120px;
+  display: none;
+}
+.form{
+  float: right;
+  margin-bottom: 200px;
+}
+#regist{
+  font-size: 2em;
+  font-family: cursive;
+  margin-left: 550px;
+  margin-top: 40px;
+  margin-bottom: 0;
+}
+.reg-submit{
+  padding: 13px 30px;
+  margin: 5px 0 20px 0;
+  font-size: 20px;
+  color: black;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: white;
+}
+.reg-submit:hover{
+  text-decoration: underline;
+}
+.mes{
+  display: block;
+  border-radius: 30px;
+  background-color: #DB7093;
+  color: white;
+  font-family: cursive;
+  width: 400px;
+  height: 60px;
+  box-shadow:  3px 3px 3px 3px grey;
+  margin-left: 850px;
+  position: absolute;
+  bottom: 130px;
+}
+.mes p{
+  margin: 10px;
+  margin-top: 0;
+  padding: 10px;
+  padding-left: 90px;
+  font-size: 1.5em;
+}
+.mes:hover{
+  text-decoration: underline;
+  cursor: pointer;
+}
+.footer {
+  background-color: #808080;
+  color: white;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 40px;
+}
+.footer p{
+  margin: 10px;
+}
+
+
+
+
+
+
+
+
+/*  Калькулятор */
+
+.calculator{
+  display: block;
+}
+.calculator p{
+  margin-left: 100px;
+  margin-top: 30px;
+  font-size: 1.3em;
+}
+.calculator input{
+  margin-left: 100px;
+  margin-top: 30px;
+}
+.female{
+  width: 50%;
+  background-color:  #DB7093;
+  float: left;
+  height: 400px;
+}
+.male{
+  width: 50%;
+  background-color: #DB7093;
+  float: left;
+  height: 400px;
+}
+.percent{
+  margin-top: 50px;
+  background-color: #DB7093;
+  height: 100px;
+}
+.percent span{
+  margin-left: 450px;
+  font-size: 1.3em;
+  padding: 0;
+}
+#together{
+  padding: 13px 30px;
+  margin: 15px 0 20px 0;
+  font-size: 20px;
+  color: black;
+  border-radius: 15px;
+  cursor: pointer;
+  background-color:  #DB7093;
+  margin-left: 450px;
+}
+#together:hover{
+  text-decoration: underline;
+}
+#pers{
+  width: 50%;
+  float: left;
+  font-size: 1.4em;
+}
+#couple{
+  width: 40%;
+  float: right;
+  margin-right: 100px;
+  font-size: 1.3em;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Авторизация */
+
+
+#autor{
+  font-size: 2em;
+  font-family: cursive;
+  margin-left: 550px;
+  margin-top: 50px;
+  margin-bottom: 0;
+}
+.container{
+  width: 400px;
+  height: 350px;
+  background-color: #DB7093;
+  text-align: center;
+  margin-left: 450px;
+  margin-top: 100px;
+  border-radius: 5px;
+}
+input[type="text"], input[type="password"]{
+  width: 300px;
+  height: 50px;
+  font-size: 20px;
+  margin-bottom: 35px;
+  border-radius: 3px;
+  padding-left: 10px;
+  margin-top: 20px;
+}
+
+.submit{
+  padding: 13px 30px;
+  margin: 5px 0 20px 0;
+  font-size: 20px;
+  color: black;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: white;
+}
+.submit:hover{
+  text-decoration: underline;
+}
+
+
+/*  Регистрация */
+
+.container-reg{
+  width: 400px;
+  height: 530px;
+  background-color: #DB7093;
+  text-align: center;
+  margin-left: 450px;
+  margin-top: 100px;
+  border-radius: 5px;
+  position: relative;
+}
+#regist{
+  font-size: 2em;
+  font-family: cursive;
+  margin-left: 550px;
+  margin-top: 40px;
+  margin-bottom: 0;
+}
+.reg-submit{
+  padding: 13px 30px;
+  margin: 5px 0 20px 0;
+  font-size: 20px;
+  color: black;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: white;
+}
+.reg-submit:hover{
+  text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* Основная страница */
+
+
+.new_friend{
+  width: 33%;
+  position: relative;
+  float: left;
+  display: block;
+  height: 50px;
+  background-color: #DB7093;
+  margin: 5px;
+  margin-top: 15px;
+  border-radius: 15px;
+  font-size: 1.3em;
+  font-style: italic;
+  box-shadow: 0 0 10px;
+  margin-left: 10px;
+}
+.new_friend:hover{
+  color: black;
+  cursor: pointer;
+  text-decoration: underline;
+}
+.enter_conv{
+  width: 32%;
+  position: relative;
+  float: left;
+  display: block;
+  height: 50px;
+  background-color: #DB7093;
+  margin: 5px;
+  margin-top: 15px;
+  border-radius: 15px;
+  font-size: 1.3em;
+  font-style: italic;
+  box-shadow: 0 0 10px;
+}
+.enter_conv:hover{
+  color: black;
+  cursor: pointer;
+  text-decoration: underline;
+}
+.create_conv{
+  width: 32%;
+  position: relative;
+  float: left;
+  display: block;
+  height: 50px;
+  background-color: #DB7093;
+  margin: 5px;
+  margin-top: 15px;
+  border-radius: 15px;
+  font-size: 1.3em;
+  font-style: italic;
+  box-shadow: 0 0 10px;
+}
+.create_conv:hover{
+  color: black;
+  cursor: pointer;
+  text-decoration: underline;
+}
+.pannel p{
+  margin: 10px;
+  margin-left: 90px;
+}
+
+.image{
+  display: block;
+  height: 300px;
+  background: url(lebed.jpg) no-repeat center fixed;
+  background-size: cover;
+  width: 100%;
+  background-attachment: local;
+}
+.image p{
+  color: white;
+}
+.foto{
+  display: block;
+  background-color: #FFEFD5;
+  border-radius: 40px;
+  height: 400px;
+  width: 60%;
+  margin-top: 80px;
+  margin-left: 250px;
+}
+.photo img{
+height: 150px;
+margin-top: 200px;
+}
+.photo p{
+  margin-top: 10%;
+  margin-left: 400px;
+  font-size: 1.4em;
+  font-family: italic;
+}
+.left{
+  width: 30%;
+  float: left;
+  height: 1000px;
+  background-color: #FFEFD5;
+  margin-top: 100px;
+  margin-left: 15px;
+  border-radius: 15px;
+
+}
+.psih-muj{
+  display: block;
+  opacity: 0.8;
+  width: 90%;
+  float: right;
+  height: 50px;
+  position: relative;
+  margin-top: 20px;
+  font-size: 1.2em;
+  font-family: italic;
+}
+.psih-jen{
+  display: block;
+  opacity: 0.8;
+  width: 90%;
+  float: right;
+  height: 50px;
+  position: relative;
+  margin-top: 10px;
+  font-size: 1.2em;
+  font-family: italic;
+}
+.ships{
+  display: block;
+  opacity: 0.8;
+  width: 90%;
+  float: right;
+  height: 50px;
+  position: relative;
+  margin-top: 10px;
+  font-size: 1.2em;
+  font-family: italic;
+}
+.sovmest{
+  display: block;
+  opacity: 0.8;
+  width: 90%;
+  float: right;
+  height: 50px;
+  position: relative;
+  margin-top: 10px;
+  font-size: 1.2em;
+  font-family: italic;
+}

@@ -1,0 +1,120 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>KSTULove*Сайт знакомств КГТУ</title>
+    <link href="{%static 'meets.css'%}" rel="stylesheet">
+    <link href="{%static 'bootsrtap.min.css'%}" rel="stylesheet">
+    <script src="{% static 'jquery-3.2.1.slim.min.js' %}"></script>
+    <link href="{%static 'i40156.png'%}" rel="shortcut icon" type="image/x-icom">
+  </head>
+  <body>
+    <header>
+        <div class="love"><center><a href="{% url 'home' %}"><p id="K">KSTU<span>Love</span></p></a></center></div>
+        <div class="sign"><a href="{% url 'sign' %}"><p>Вход</p></a></div>
+        <div class="reg"><a href="{% url 'reg' %}"><p>Регистариция</p></a></div>
+    </header>
+        <div class="all">
+          <div class="start">
+            <p id="you">KSTU Love - это особое место, где студенты КГТУ имени Раззакова могут знакомиться, общаться и находить единомышленников!</p>
+            <div class="join">
+              <a href="reg.html"><p>Присоединиться</p></a>
+            </div>
+          </div>
+        </div>
+      <br><br><br><br>
+          <div class="friends">
+            <pre>Знакомься с новыми людьми!
+            </pre>
+            <img src="{% static "friends.jpg" %} ">
+          </div>
+        <br><br>
+        <hr>
+        <br><br>
+        <div class="likely-minded">
+          <pre>Найди людей со схожими интересами!
+          </pre>
+          <img src="{% static "l-m.jpg" %}">
+        </div><br><br><br>
+        <br><br><br><br><hr>
+        <br><br><br>
+        <div class="calc">
+          <pre>Узнай свою совместимость в паре!
+          </pre>
+          <br><br><br>
+          <img src="{% static "large.jpg" %}">
+          <br><br><br>
+        </div>
+        <div class="calculator">
+          <div class="female">
+            <p>Введите имя девушки</p>
+            <input type="text" name="girl-name" placeholder="Имя девушки">
+            <p>Введите знак зодиака девушки</p>
+            <input type="text" name="girl-sign" placeholder="Знак зодиака">
+          </div>
+          <div class="male">
+            <p>Введите имя парня</p>
+            <input type="text" name="boy-name" placeholder="Имя парня">
+            <p>Введите знак зодиака парня</p>
+            <input type="text" name="boy-sign" placeholder="Знак зодиака">
+          </div>
+          <div class="percent">
+            <br><br><br>
+            <button id="together" onclick='plus()'>Высчитать совместимость</button>
+            <span id="pers">Ваша совместимость в паре:<pre id="couple">0</pre></span>
+          </div>
+          <script type="text/javascript">
+            function plus(){
+              y = 0;
+              y = Math.floor(Math.random() * (100 - 1 + 1)) + 1;
+              document.getElementById("couple").innerHTML = y;
+            }
+          </script>
+          <script>
+              var fail = false;
+              var girl-name = form.girl-name.value;
+              var boy-name = form.boy-name.value;
+              var girl-sign = form.girl-sign.value;
+              var boy-sign = form.boy-sign.value;
+              if (girl-name == "") fail = "Вы не ввели имя девушки";
+              else if (boy-name == "") fail = "Вы не ввели имя парня";
+              else if (girl-sign == "") fail = "Вы не ввели знак зодиака девушки";
+              else if (boy-sign == "") fail = "Вы не ввели знак зодиака парня";
+              if(fail) alert(fail);
+            }
+          </script>
+        </div>
+      <div class="mes">
+        <p>Написать нам</p>
+      </div>
+      <div class="container-message">
+        <form class="form" action="">
+          <input type="text" name="name" placeholder="Введите имя">
+          <input type="text" name="e-mail" placeholder="Введите e-mail">
+          <input type="text" name="message" placeholder="Введите ваше сообщение">
+          <input class="reg-submit" type="submit" name="submit" value="Отправить">
+        </form>
+        <script>
+          $('.mes').mouseenter(function(){
+            $(this).hide()
+            $('.container-message').show()
+          });
+          $('.container-message').mouseleave(function(){
+            $(this).hide()
+            $('.mes').show()
+          });
+          $('.reg-submit').click(function(){
+            alert('Ваше сообщение отправлено');
+          });
+        </script>
+      </div>
+      <div class="timer">
+      </div>
+      <span id="output"></span>
+      <div id="slider"></div>
+    <footer class="footer">
+      <center><p>Cайт был разработан специально для учащихся КГТУ</p></center>
+    </footer>
+  </body>
+</html>
